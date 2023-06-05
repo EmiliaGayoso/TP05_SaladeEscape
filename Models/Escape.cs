@@ -4,7 +4,7 @@ public static int EstadoJuego{get;set;}
 
 private static void InicializarJuego()
 {
-IncognitasSalas=new string[]{"bitch","slut","lara","byebye"};
+    IncognitasSalas=new string[]{"bitch","slut","lara","byebye"};
 }
 public static int GetEstadoJuego()
 {
