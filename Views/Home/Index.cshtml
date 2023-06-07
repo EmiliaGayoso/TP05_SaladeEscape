@@ -4,24 +4,17 @@
         <h1>EscalofriOrt</h1>
         <h2>¡Descubre tus miedos y escapa de lo desconocido!</h2>
     </header>
-    <div class="ImagenesDescriptivas">
+<div class="ImagenesDescriptivas">
         <img src="img/ImgDescriptivaAula.jpg" width="450px" height="auto">
         <img src="img/PantallaCidi.jpg" width="450px" height="auto">
         <img src="img/PantallaOficina.jpg" width="450px" height="auto">
-    </div>
-    <div class="FormIngresoDeNombre">
-        <form method="post" >
-            Nombre usuario: <input type="text" name="username" placeholder="Ingresa el nombre de usuario"> 
-            <p><input type="submit" value="Siguiente ->"></p>
-        </form>
-    </div>
-    <nav class="Enlaces">
-        <ul>
-            <li><a href="tutorial.cshtml">Tutorial</a></li>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="creditos.cshtml">Créditos</a></li>
-        </ul>
-    </nav>
+        <img src="img/PantallaSalaBiblioteca.jpg" width=450px height="auto">
+</div>
+    
+      <a class="Botones" href='@Url.Action("Tutorial")'>Tutorial</a>
+      <a class="Botones" href='@Url.Action("Creditos")'>Creditos</a>
+      <a class="Botones" href='@Url.Action("Comenzar")'>Comenzar</a>
+ 
     <footer>
         <h5>Hecho por: María Emilia Gayoso Martinez, Eitan Gabriel Toporovskaja y Lara Micaela Farina.</h5>
     </footer>

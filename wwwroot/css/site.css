@@ -21,8 +21,8 @@ footer {
 }
 
 /* Estilos para Index*/
-.Index{
-  background-image: url("wwwroot/img/PantallaIngresoDeNombre.jpg");
+body{
+  background-image: url("img/PantallaIngresoDeNombre.jpg");
       color: red;
       background-color: rgba(255, 0, 0, 0.082);
       font-family: Arial, sans-serif;
@@ -52,7 +52,13 @@ footer {
       display: flex;
       justify-content: center;
     }
-    
+    .Botones{
+      border: none;
+      background-color: #ff3c3c;
+      text-decoration: none;
+      color: white;
+      border-radius: 50px;
+  }
     .Index .ImagenesDescriptivas img {
       border: 2px solid black;
       border-radius: 10px;
@@ -63,65 +69,16 @@ footer {
     .Index .ImagenesDescriptivas img:hover {
       border-color: red;
     }
-    
-    .Index .FormIngresoDeNombre {
-      font-size: 25px;
-      text-align: center;
-      margin-top: 20px;
-    }
-    
-    .Index FormIngresoDeNombre input[type="text"] {
-      padding: 5px;
-      font-size: 25px;
-          margin-bottom: 10px;
-      width: 200px;
-    }
-    
-    .Index FormIngresoDeNombre input[type="submit"] {
-      color: white;
-      font-size: 25px;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    
-    .Index footer, .Creditos footer {
-      background-color: red;
-      padding: 10px;
+   .Index footer{
+      color:black;
+
       text-align: center;
     }
     
-    .Index  footer h5 , .Creditos footer h5{
+    footer h5{
       color: white;
       font-size: 14px;
     } 
-    .Enlaces {
-      padding: 10px;
-  margin-left: 800px;
-  padding: 10px;
-  margin-bottom: 220px;
-  }
-  
-  .Enlaces ul {
-      font-family: 'Lucida Sans';
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-  }
-  
-  .Enlaces li {
-      margin: 0 5px;
-  }
-  
-  .Enlaces li a {
-      display: inline-block;
-      padding: 8px 16px;
-      text-decoration: none;
-      background-color: #af4c4c;
-      color: white;
-  } 
   /* Estilos para creditos */
   .Personas{
       margin-left: 500px;
