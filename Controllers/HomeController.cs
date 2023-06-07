@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace TPBase.Controllers;
+namespace TP05_SaladeEscape.Controllers;
 
 public class HomeController : Controller
 {
@@ -10,7 +10,7 @@ public class HomeController : Controller
     }
     public IActionResult Tutorial()
     {
-        return View();
+        return View("tutorial");
     }
     public IActionResult Creditos()
     {
@@ -20,7 +20,13 @@ public class HomeController : Controller
     {
        int habitacion= Escape.GetEstadoJuego()+1;
        return View("habitacion"+ habitacion);
+
     }
+    public IActionResult Creditos()
+    {
+        return View("creditos");
+    }
+    
     public IActionResult Habitacion(int sala, string clave)
     {
         if(!Escape.ResolverSala(sala,clave))

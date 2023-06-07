@@ -1,4 +1,4 @@
-namespace TPBase.Models;
+namespace TP05_SaladeEscape.Models;
 
 public class ErrorViewModel
 {
