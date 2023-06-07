@@ -13,6 +13,10 @@ html {
 body {
   margin: 20px 60px 0px 20px;
 }
+body.index
+{
+  background-image: url("wwwroot/img/PantallaIngresoDeNombre.jpg");
+}
 
 footer {
   position: fixed; 
@@ -21,12 +25,11 @@ footer {
 }
 
 /* Estilos para Index*/
-.Index{
-  background-image: url("wwwroot/img/PantallaIngresoDeNombre.jpg");
-      color: red;
-      background-color: rgba(255, 0, 0, 0.082);
-      font-family: Arial, sans-serif;
-    }
+.Index div
+{
+  color: red;
+  font-family: Arial, sans-serif;
+}
     
     .Index  header , .Creditos header {
       padding: 20px;
@@ -86,12 +89,6 @@ footer {
       cursor: pointer;
     }
     
-    .Index footer, .Creditos footer {
-      background-color: red;
-      padding: 10px;
-      text-align: center;
-    }
-    
     .Index  footer h5 , .Creditos footer h5{
       color: white;
       font-size: 14px;
@@ -134,5 +131,9 @@ footer {
   
   .Personas img{
       border-radius: 100px;
+  }
+  body.hab1
+  {
+    background-image: url("img/PantallaCidi.jpg");
   }
   

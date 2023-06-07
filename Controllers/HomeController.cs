@@ -12,10 +12,14 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult Creditos()
+    {
+        return View();
+    }
     public IActionResult Comenzar()
     {
-       int habitacion=+ Escape.GetEstadoJuego();
-       return View("Habitacion"+ habitacion);
+       int habitacion= Escape.GetEstadoJuego()+1;
+       return View("habitacion"+ habitacion);
     }
     public IActionResult Habitacion(int sala, string clave)
     {
