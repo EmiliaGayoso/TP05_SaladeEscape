@@ -1,29 +1,34 @@
 <header>
-<nav>
-                 <ul>
-                <li><a href='@Url.Action("Index")'>Volver al Menu</a></li>
-            </ul>
-            </nav>
+    <nav>
+        <ul>
+            <li><a href='@Url.Action("Index")'>Volver al Menu</a></li>
+        </ul>
+    </nav>
 </header>
 <article>
-  <div id="ten-countdown"></div>
-<h2>¿Qué hacemos en este cuarto?</h2>
-@{
-      if(ViewBag.Error != null){
-        <div class = "alert">
-          <button type = "button" class = "btn-close" data-bs-dismiss="alert"></button>
-          <strong>Error! </strong> Respuesta Incorrecta
-        </div>
-      }
+
+    <h2>¿Qué hacemos en este cuarto?</h2>
+    @{
+        if (ViewBag.Error != null)
+        {
+            <div class="alert">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Error! </strong> Respuesta Incorrecta
+            </div>
+        }
     }
-<p>Has avanzado a través del colegio, vía los ductos de ventilación, hacia la oficina de tu antigua coordinadora donde hay documentos importantes. Descubre el código secreto para poder desbloquear la siguiente sala. ¡Suerte! </p>
-      <img src = "/img/Oficina.png" width="50%" height="70%">
-<br>
-<form action= '@Url.Action("Habitacion", "Home")'>
-    <input type="hidden" name = "sala" value = "2">
-    <input type="text" name = "clave">
-    <input type="button" onclick="alert('Debes fijarte bien en las hojas que están encima del escritorio.')" value = "Pista">
-    <input type="button" onclick="alert(' El nombre de nuestra coordinadora compuesto de una forma rara 🙂')" value="Pista Extra">
-    <input type="submit" value = "Envíar">
-</form>
+    <p>Has avanzado a través del colegio, vía los ductos de ventilación, hacia la oficina de tu antigua coordinadora
+        donde hay documentos importantes. Descubre el código secreto para poder desbloquear la siguiente sala. ¡Suerte!
+    </p>
+    <img src="/img/Oficina.png" width="50%" height="70%">
+    <br>
+    <form action='@Url.Action("Habitacion", "Home")'>
+        <input type="hidden" name="sala" value="2">
+        <input type="text" name="clave">
+        <input type="button" onclick="alert('Debes fijarte bien en las hojas que están encima del escritorio.')"
+            value="Pista">
+        <input type="button" onclick="alert(' El nombre de nuestra coordinadora compuesto de una forma rara 🙂')"
+            value="Pista Extra">
+        <input type="submit" value="Envíar">
+    </form>
 </article>
