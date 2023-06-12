@@ -22,10 +22,6 @@ public class HomeController : Controller
        return View("habitacion"+ habitacion);
 
     }
-    public IActionResult Creditos()
-    {
-        return View("creditos");
-    }
     
     public IActionResult Habitacion(int sala, string clave)
     {

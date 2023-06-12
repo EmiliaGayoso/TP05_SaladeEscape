@@ -13,112 +13,119 @@ html {
 body {
   margin: 20px 60px 0px 20px;
 }
-body.index
-{
-  background-image: url("wwwroot/img/PantallaIngresoDeNombre.jpg");
-}
 
 footer {
-  position: fixed; 
-  bottom: 0; 
+  position: fixed;
+  bottom: 0;
   margin: 10px 0px 20px 0px;
 }
 
-/* Estilos para Index*/
-body{
-  background-image: url("img/PantallaIngresoDeNombre.jpg");
-      color: red;
-      background-color: rgba(255, 0, 0, 0.082);
-      font-family: Arial, sans-serif;
-    }
+/* EsPantalla index,tutorial,creditos*/
+.Index,
+.Tutorial,
+.Creditos {
+  background-image: url("../img/pantalla1-2.jpg");
+  color: red;
+  background-color: rgba(255, 0, 0, 0.082);
+  font-family: Arial, sans-serif;
+}
 
-    
-    .Index  header , .Creditos header {
-      padding: 20px;
-      text-align: center;
-    }
-    
-    .Index  header img , .Creditos header img {
-      width: 55px;
-      height: auto;
-    }
-    
-    .Index  header h1 , .Creditos header h1 {
-      color: white;
-      font-size: 24px;
-    }
-    
-    .Index  header h2 , .Creditos header h2{
-      color: white;
-      font-size: 18px;
-    }
-    
-    .Index  .ImagenesDescriptivas {
-      display: flex;
-      justify-content: center;
-    }
-    .Botones{
-      border: none;
-      background-color: #ff3c3c;
-      text-decoration: none;
-      color: white;
-      border-radius: 50px;
-  }
-    .Index .ImagenesDescriptivas img {
-      border: 2px solid black;
-      border-radius: 10px;
-      transition: border-color 0.3s ease;
-      margin: 10px;
-    }
-    
-    .Index .ImagenesDescriptivas img:hover {
-      border-color: red;
-    }
-    
-    .Index .FormIngresoDeNombre {
-      font-size: 25px;
-      text-align: center;
-      margin-top: 20px;
-    }
-    
-    .Index FormIngresoDeNombre input[type="text"] {
-      padding: 5px;
-      font-size: 25px;
-          margin-bottom: 10px;
-      width: 200px;
-    }
-    
-    .Index FormIngresoDeNombre input[type="submit"] {
-      color: white;
-      font-size: 25px;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    
-    .Index  footer h5 
-    {
-      color:black;
-      text-align: center;
-      color: white;
-      font-size: 14px;
-    } 
-  /* Estilos para creditos */
-  .Personas{
-      margin-left: 500px;
-      text-align: center;
-  }
-  .Emilia , .Eitan{
-      float:left;
-      margin-left: 50px;
-  }
-  
-  .Personas img{
-      border-radius: 100px;
-  }
-  body.hab1
-  {
-    background-image: url("img/PantallaCidi.jpg");
-  }
-  
+/*index*/
+.Index header,
+.Creditos header 
+{
+  padding: 20px;
+  text-align: center;
+}
+
+.Index header img,
+.Creditos header img {
+  width: 55px;
+  height: auto;
+}
+
+.Index header h1,
+.Creditos header h1 {
+  color: white;
+  font-size: 24px;
+}
+
+.Index header h2,
+.Creditos header h2 {
+  color: white;
+  font-size: 18px;
+}
+
+.Index .ImagenesDescriptivas {
+  display: flex;
+  justify-content: center;
+}
+
+.Botones {
+  border: none;
+  background-color: #ff3c3c;
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+}
+
+.Index .ImagenesDescriptivas img {
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+  margin: 10px;
+}
+
+.Index .ImagenesDescriptivas img:hover {
+  border-color: red;
+}
+
+.Index .FormIngresoDeNombre {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.Index .FormIngresoDeNombre input[type="text"] {
+  padding: 5px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.Index .FormIngresoDeNombre input[type="submit"] {
+  color: white;
+  font-size: 25px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Index footer h5 {
+  color: black;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+/* Estilos para creditos */
+.Personas {
+  margin-left: 500px;
+  text-align: center;
+}
+
+.Emilia,
+.Eitan {
+  float: left;
+  margin-left: 50px;
+}
+
+.Personas img {
+  border-radius: 100px;
+}
+
+body.hab1 {
+  background-image: url("../img/cidi.jpg");
+  background-repeat: no-repeat;
+}
