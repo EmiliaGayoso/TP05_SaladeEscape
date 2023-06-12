@@ -5,14 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>@ViewData["Title"] Escape Room - EscalofriOrt</title>
         <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link href="~/lightbox2-2.11.4/src/css/lightbox.css" rel="stylesheet" />
     </head>
     <body>
         
-        <div style="padding:20px 10px 0px 10px;">
+        <div style="padding:0px;">
             @RenderBody()
         </div>
         
         <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/lightbox2-2.11.4/dist/js/lightbox-plus-jquery.js"></script>
         @await RenderSectionAsync("Scripts", required: false)
     </body>
 </html>

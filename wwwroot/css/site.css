@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  margin: 20px 60px 0px 20px;
+  margin: 0px;
 }
 
 footer {
@@ -28,7 +28,15 @@ footer {
   background-image: url("../img/pantalla1-2.jpg");
   color: red;
   background-color: rgba(255, 0, 0, 0.082);
+  height: 2200px;
+  width: 100%;
   font-family: Arial, sans-serif;
+}
+.hab1 {
+  background-image: url("../img/cidi.jpg");
+  background-repeat: no-repeat;
+  height: 2200px;
+  width: 100%;
 }
 
 /*index*/
@@ -125,15 +133,10 @@ footer {
   border-radius: 100px;
 }
 
-body.hab1 {
-  background-image: url("../img/cidi.jpg");
-  background-repeat: no-repeat;
-}
 
 Nav {
   padding-top: 10px;
   margin: 40px;
-  margin-left: 45%;
 }
 
 Nav ul {
@@ -163,4 +166,38 @@ Nav li a {
 Nav li a:hover {
   background-color: rgba(141, 39, 39, 0.884);
   color: rgb(255, 240, 240);
+}
+
+/*Habitacion 1, java*/
+.pista
+{
+  margin: 0;
+  position: absolute;
+  top: 488px;
+}
+.pista a 
+{
+  display: inline;
+}
+.pista .pista1
+{
+  position: absolute;
+  top: 40px; 
+  left: 40px;
+}
+.pista .pista2
+{
+  position: absolute;
+  top: 35px; 
+  left: 548px;
+}
+.pista .pista3
+{
+  position: absolute;
+  top: 26px; 
+  left: 1553px;
+}
+.pista3 img
+{
+  width: 265px;
 }
