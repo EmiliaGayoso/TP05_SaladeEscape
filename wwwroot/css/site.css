@@ -142,4 +142,9 @@ body{
   {
     background-image: url("img/PantallaCidi.jpg");
   }
-  
+  .Victoria{
+    background-color: greenyellow;
+    color:beige;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
