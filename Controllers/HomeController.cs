@@ -10,21 +10,17 @@ public class HomeController : Controller
     }
     public IActionResult Tutorial()
     {
-        return View("tutorial");
-    }
-    public IActionResult Creditos()
-    {
-        return View();
+        return View("Tutorial");
     }
     public IActionResult Comenzar()
     {
        int habitacion= Escape.GetEstadoJuego()+1;
-       return View("habitacion"+ habitacion);
+       return View("Habitacion"+ habitacion);
 
     }
     public IActionResult Creditos()
     {
-        return View("creditos");
+        return View("Creditos");
     }
     
     public IActionResult Habitacion(int sala, string clave)

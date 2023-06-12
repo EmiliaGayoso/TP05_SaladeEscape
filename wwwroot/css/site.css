@@ -13,11 +13,6 @@ html {
 body {
   margin: 20px 60px 0px 20px;
 }
-body.index
-{
-  background-image: url("wwwroot/img/PantallaIngresoDeNombre.jpg");
-}
-
 footer {
   position: fixed; 
   bottom: 0; 
@@ -26,9 +21,8 @@ footer {
 
 /* Estilos para Index*/
 body{
-  background-image: url("img/PantallaIngresoDeNombre.jpg");
       color: red;
-      background-color: rgba(255, 0, 0, 0.082);
+      background-color: rgb(0, 0, 0);
       font-family: Arial, sans-serif;
     }
 
@@ -57,13 +51,40 @@ body{
       display: flex;
       justify-content: center;
     }
-    .Botones{
-      border: none;
-      background-color: #ff3c3c;
-      text-decoration: none;
-      color: white;
-      border-radius: 50px;
+  Nav{
+      padding-top:10px;
+      margin: 40px;
+      margin-left: 45%;
+    }
+  Nav ul {
+      list-style-type: none;
+      margin: 0;
+      margin-right: 10px;
+      padding: 0;
+      display: flex;
+      margin-left: 700px;
   }
+  
+  Nav li {
+      margin: 0 5px;
+  }
+  
+  Nav li a {
+      font-family: 'Franklin Gothic Medium';
+      border-radius: 50px;
+      display: inline-block;
+      padding: 8px 16px;
+      text-decoration: none;
+      background-color: rgb(255, 127, 127);
+      box-shadow: 0 3px 7px 0 rgba(141, 39, 39, 0.884), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      color: rgb(255, 255, 255);
+  }
+  Nav li a:hover{
+  background-color:rgba(141, 39, 39, 0.884);
+  color:rgb(255, 240, 240);
+  }
+  
+  
     .Index .ImagenesDescriptivas img {
       border: 2px solid black;
       border-radius: 10px;
