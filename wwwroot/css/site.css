@@ -18,125 +18,156 @@ footer {
   position: fixed;
   bottom: 0;
   margin: 10px 0px 20px 0px;
-}    
-    .Index  header , .Creditos header {
-      padding: 20px;
-      text-align: center;
-    }
-    
-    .Index  header img , .Creditos header img {
-      width: 55px;
-      height: auto;
-    }
-    
-    .Index  header h1 , .Creditos header h1 {
-      color: white;
-      font-size: 24px;
-    }
-    
-    .Index  header h2 , .Creditos header h2{
-      color: white;
-      font-size: 18px;
-    }
-    
-    .Index  .ImagenesDescriptivas {
-      display: flex;
-      justify-content: center;
-    }
-  Nav{
-      padding-top:10px;
-      margin: 40px;
-      margin-left: 45%;
-    }
-  Nav ul {
-      list-style-type: none;
-      margin: 0;
-      margin-right: 10px;
-      padding: 0;
-      display: flex;
-      margin-left: 700px;
-  }
-  
-  Nav li {
-      margin: 0 5px;
-  }
-  
-  Nav li a {
-      font-family: 'Franklin Gothic Medium';
-      border-radius: 50px;
-      display: inline-block;
-      padding: 8px 16px;
-      text-decoration: none;
-      background-color: rgb(255, 127, 127);
-      box-shadow: 0 3px 7px 0 rgba(141, 39, 39, 0.884), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-      color: rgb(255, 255, 255);
-  }
-  Nav li a:hover{
-  background-color:rgba(141, 39, 39, 0.884);
-  color:rgb(255, 240, 240);
-  }
-  
-  
-    .Index .ImagenesDescriptivas img {
-      border: 2px solid black;
-      border-radius: 10px;
-      transition: border-color 0.3s ease;
-      margin: 10px;
-    }
-    
-    .Index .ImagenesDescriptivas img:hover {
-      border-color: red;
-    }
-    
-    .Index .FormIngresoDeNombre {
-      font-size: 25px;
-      text-align: center;
-      margin-top: 20px;
-    }
-    
-    .Index FormIngresoDeNombre input[type="text"] {
-      padding: 5px;
-      font-size: 25px;
-          margin-bottom: 10px;
-      width: 200px;
-    }
-    
-    .Index FormIngresoDeNombre input[type="submit"] {
-      color: white;
-      font-size: 25px;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    
-    .Index  footer h5 
-    {
-      color:black;
-      text-align: center;
-      color: white;
-      font-size: 14px;
-    } 
-  /* Estilos para creditos */
-  .Personas{
-      margin-left: 500px;
-      text-align: center;
-  }
-  .Emilia , .Eitan{
-      float:left;
-      margin-left: 50px;
-  }
-  
-  .Personas img{
-      border-radius: 100px;
-  }
-  body.hab1
-  {
-    background-image: url("img/PantallaCidi.jpg");
-  }
+}
+
+
+
   .Victoria{
     background-color: greenyellow;
     color:beige;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
+/* EsPantalla index,tutorial,creditos*/
+.Index,
+.Tutorial,
+.Creditos {
+  background-image: url("../img/pantalla1-2.jpg");
+  color: red;
+  background-color: rgba(255, 0, 0, 0.082);
+  font-family: Arial, sans-serif;
+}
+
+/*index*/
+.Index header,
+.Creditos header {
+  padding: 20px;
+  text-align: center;
+}
+
+.Index header img,
+.Creditos header img {
+  width: 55px;
+  height: auto;
+}
+
+.Index header h1,
+.Creditos header h1 {
+  color: white;
+  font-size: 24px;
+}
+
+.Index header h2,
+.Creditos header h2 {
+  color: white;
+  font-size: 18px;
+}
+
+.Index .ImagenesDescriptivas {
+  display: flex;
+  justify-content: center;
+}
+
+.Botones {
+  border: none;
+  background-color: #ff3c3c;
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+}
+
+.Index .ImagenesDescriptivas img {
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+  margin: 10px;
+}
+
+.Index .ImagenesDescriptivas img:hover {
+  border-color: red;
+}
+
+.Index .FormIngresoDeNombre {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.Index .FormIngresoDeNombre input[type="text"] {
+  padding: 5px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.Index .FormIngresoDeNombre input[type="submit"] {
+  color: white;
+  font-size: 25px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Index footer h5 {
+  color: black;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+/* Estilos para creditos */
+.Personas {
+  margin-left: 500px;
+  text-align: center;
+}
+
+.Emilia,
+.Eitan {
+  float: left;
+  margin-left: 50px;
+}
+
+.Personas img {
+  border-radius: 100px;
+}
+
+body.hab1 {
+  background-image: url("../img/cidi.jpg");
+  background-repeat: no-repeat;
+}
+
+Nav {
+  padding-top: 10px;
+  margin: 40px;
+  margin-left: 45%;
+}
+
+Nav ul {
+  list-style-type: none;
+  margin: 0;
+  margin-right: 10px;
+  padding: 0;
+  display: flex;
+  margin-left: 700px;
+}
+
+Nav li {
+  margin: 0 5px;
+}
+
+Nav li a {
+  font-family: 'Franklin Gothic Medium';
+  border-radius: 50px;
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: rgb(255, 127, 127);
+  box-shadow: 0 3px 7px 0 rgba(141, 39, 39, 0.884), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: rgb(255, 255, 255);
+}
+
+Nav li a:hover {
+  background-color: rgba(141, 39, 39, 0.884);
+  color: rgb(255, 240, 240);
+}
