@@ -20,6 +20,7 @@ footer {
   margin: 10px 0px 20px 0px;
 }
 
+
 /* EsPantalla index,tutorial,creditos*/
 .Index,
 .Tutorial,
@@ -32,8 +33,7 @@ footer {
 
 /*index*/
 .Index header,
-.Creditos header 
-{
+.Creditos header {
   padding: 20px;
   text-align: center;
 }
@@ -128,4 +128,39 @@ footer {
 body.hab1 {
   background-image: url("../img/cidi.jpg");
   background-repeat: no-repeat;
+}
+
+Nav {
+  padding-top: 10px;
+  margin: 40px;
+  margin-left: 45%;
+}
+
+Nav ul {
+  list-style-type: none;
+  margin: 0;
+  margin-right: 10px;
+  padding: 0;
+  display: flex;
+  margin-left: 700px;
+}
+
+Nav li {
+  margin: 0 5px;
+}
+
+Nav li a {
+  font-family: 'Franklin Gothic Medium';
+  border-radius: 50px;
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: rgb(255, 127, 127);
+  box-shadow: 0 3px 7px 0 rgba(141, 39, 39, 0.884), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: rgb(255, 255, 255);
+}
+
+Nav li a:hover {
+  background-color: rgba(141, 39, 39, 0.884);
+  color: rgb(255, 240, 240);
 }
