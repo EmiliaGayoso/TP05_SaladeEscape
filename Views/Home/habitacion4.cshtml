@@ -1,0 +1,35 @@
+<div class="hab4">
+<header>
+    <nav>
+        <ul>
+            <li><a href='@Url.Action("Index")'>Volver al Menu</a></li>
+        </ul>
+    </nav>
+</header>
+<article>
+    <h2>¿Qué hacemos en esta habitación?</h2>
+    @{
+        if (ViewBag.Error != null)
+        {
+            <div class="alert">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Error! </strong> Respuesta Incorrecta
+            </div>
+        }
+    }
+    <h1>La temida aula de matemática</h1>
+    <p>Pensabas que alguien o algo te estaba persiguiendo, y estabas en lo cierto. Corriste hasta llegar a un aula donde estaban dictando matemática de hace más de 100 años. De repente, la puerta se cierra ya que resulta que una vez que entras, hasta no resolver todas las ecuaciones, no puedes salir. ¡Resuelve las ecuaciones para lograr salir de esta pesadilla!
+    </p>
+    <img src="/img/Aula.png" width="50%" height="70%">
+    <br>
+    <form action='@Url.Action("Habitacion", "Home")'>
+        <input type="hidden" name="sala" value="4">
+        <input type="text" name="clave">
+        <input type="button" onclick="alert('El orden de las ecuaciones son: Primero van las dos de arriba y después las dos de abajo (De izquierda a derecha).')"
+            value="Pista">
+        <input type="button" onclick="alert('Son ecuaciones de 4to grado de Matemática… Representan el año en el que estamos.')"
+            value="Pista Extra">
+        <input type="submit" value="Envíar">
+    </form>
+</article>
+</div>
