@@ -5,4 +5,21 @@
 <a class=" pista2" href="~/img/compuzoom.jpg" data-lightbox="compuzoom" data-title="pista 2"><img src="~/img/Pistas.jpg"/></a>
 <a class=" pista3" href="~/img/compuzoom.jpg" data-lightbox="compuzoom" data-title="pista 3"><img src="~/img/Pistas.jpg"/></a>
 </div>
+@{
+        if (ViewBag.Error != null)
+        {
+            <div class="alert">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Error! </strong> Respuesta Incorrecta
+            </div>
+        }
+}
+<h1>CIDI</h1>
+<p>Subiste las escaleras de al lado de la bibloteca. Te chocas con el cidi, ves que las luces que vienen de adentro, hay compus prendidas. Descubre el código secreto para poder desbloquear la siguiente sala. ¡Suerte!
+</p>
+<form action='@Url.Action("Habitacion", "Home")'>
+        <input type="hidden" name="sala" value="1">
+        <input type="text" name="clave">
+        <input type="submit" name='clave' value="Envíar">
+</form>
 </div>

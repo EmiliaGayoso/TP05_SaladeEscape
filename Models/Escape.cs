@@ -1,8 +1,6 @@
 class Escape{
 public static string[] IncognitasSalas{get;set;}
-public static int EstadoJuego{get;set;}
-static public int intentos = 0;
-
+public static int EstadoJuego{get;set;}=1;
 private static void InicializarJuego()
 {
     IncognitasSalas=new string[]{"<!-","Y4NI","341","2210"};
@@ -13,15 +11,12 @@ public static int GetEstadoJuego()
 }
 public static bool ResolverSala(int sala, string incognita)
 {
-  if(IncognitasSalas == null) InicializarJuego();
-        if(EstadoJuego == sala){
-            if(incognita == IncognitasSalas[sala-1]){
-                EstadoJuego++;
-                return true;
-            }
-            intentos++;
-        }
-        return false;
-    }    
-
+  bool incPass=false;
+    if(incognita == IncognitasSalas[sala])
+    {
+        incPass=true;
+        EstadoJuego++;
+    }
+    return incPass;
 }
+}    
