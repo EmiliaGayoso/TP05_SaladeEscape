@@ -4,23 +4,29 @@ public static int EstadoJuego{get;set;}
 public static void InicializarJuego()
 {
     IncognitasSalas=new string[]{"<!-","Y4NI","341","2210"};
+    EstadoJuego = 1;
 }
 public static int GetEstadoJuego()
 {
     return EstadoJuego;
 }
-public static void CambioEstado()
-{
-    EstadoJuego++;
-}
+
 public static bool ResolverSala(int sala, string incognita)
 {
-  bool incPass=false;
-    if(incognita == IncognitasSalas[sala])
+    if(sala==1)
     {
-        incPass=true;
-        EstadoJuego++;
+        InicializarJuego();
     }
-    return incPass;
+    if(incognita == IncognitasSalas[sala-1])
+    {
+        EstadoJuego++;
+        Console.WriteLine("True");
+        return true;
+    }
+    else{
+        Console.WriteLine("false");
+        return false;
+    }
+    
 }
 }    

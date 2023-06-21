@@ -33,14 +33,16 @@ footer {
   background-image: url("../img/pantalla1-2.jpg");
   color: red;
   background-color: rgba(255, 0, 0, 0.082);
-  height: 2200px;
+  height: 1000px;
   width: 100%;
   font-family: Arial, sans-serif;
 }
 .hab1 {
   background-image: url("../img/cidi.jpg");
   background-repeat: no-repeat;
-  height: 2200px;
+  margin: 0px;
+  padding: 0px;
+  height: 1000px;
   width: 100%;
 }
 
@@ -187,19 +189,19 @@ Nav li a:hover {
 .pista .pista1
 {
   position: absolute;
-  top: 40px; 
-  left: 40px;
+  top: 57px; 
+  left: 39px;
 }
 .pista .pista2
 {
   position: absolute;
-  top: 35px; 
-  left: 548px;
+  top: 54px; 
+  left: 545px;
 }
 .pista .pista3
 {
   position: absolute;
-  top: 26px; 
+  top: 37px; 
   left: 1553px;
 }
 .pista3 img

@@ -6,7 +6,7 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
-        Escape.InicializarJuego();
+        Escape.EstadoJuego=0;
         return View();
     }
     public IActionResult Tutorial()
@@ -15,9 +15,12 @@ public class HomeController : Controller
     }
     public IActionResult Comenzar()
     {
-        int habitacion = Escape.GetEstadoJuego()+1;
-        Escape.CambioEstado();
-        return View("habitacion"+ habitacion);
+        if (Escape.GetEstadoJuego() == 0)
+        {
+            Escape.InicializarJuego();
+        }
+        int habitacion = Escape.GetEstadoJuego();
+        return View("habitacion" + habitacion);
     }
     public IActionResult Creditos()
     {
@@ -26,26 +29,30 @@ public class HomeController : Controller
 
     public IActionResult Habitacion(int sala, string clave)
     {
-        Escape.InicializarJuego();
         if (sala != Escape.GetEstadoJuego())
         {
-            return View("Habitacion"+Escape.GetEstadoJuego());
+            System.Console.WriteLine(sala);
+            System.Console.WriteLine(Escape.GetEstadoJuego());
+            System.Console.WriteLine(clave);
+            return View("Habitacion" + Escape.GetEstadoJuego());
         }
-        
-        if (Escape.ResolverSala(sala, clave))
+        bool resuelto = Escape.ResolverSala(sala, clave);
+        if (resuelto == true)
         {
-            if(sala<=4)
+            if (sala <= 4)
             {
                 return RedirectToAction("Comenzar");
             }
             else
             {
+
                 return View("Victoria");
             }
         }
         else
         {
-            ViewBag.Error= "RESPUESTA INCORRECTA";
+            Console.WriteLine("ERROR");
+            ViewBag.Error = "RESPUESTA INCORRECTA";
             return View("Habitacion" + sala);
         }
 
