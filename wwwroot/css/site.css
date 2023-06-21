@@ -4,12 +4,6 @@ html {
   min-height: 100%;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
 body {
   margin: 0px;
 }
@@ -44,32 +38,27 @@ footer {
   width: 100%;
 }
 
-/*index*/
+/* Header */
 .Index header,
-.Creditos header {
+.Creditos header, .Tutorial header {
   padding: 20px;
   text-align: center;
 }
 
 .Index header img,
-.Creditos header img {
+.Creditos header img, .Tutorial header img {
   width: 55px;
   height: auto;
 }
 
 .Index header h1,
-.Creditos header h1 {
+.Creditos header h1, .Tutorial header h1 {
   color: white;
   font-size: 24px;
 }
 
-.Index header h2,
-.Creditos header h2 {
-  color: white;
-  font-size: 18px;
-}
 
-.Index .ImagenesDescriptivas {
+.ImagenesDescriptivas {
   display: flex;
   justify-content: center;
 }
@@ -82,14 +71,14 @@ footer {
   border-radius: 50px;
 }
 
-.Index .ImagenesDescriptivas img {
+.ImagenesDescriptivas img {
   border: 2px solid black;
   border-radius: 10px;
   transition: border-color 0.3s ease;
   margin: 10px;
 }
 
-.Index .ImagenesDescriptivas img:hover {
+.ImagenesDescriptivas img:hover {
   border-color: red;
 }
 
@@ -129,7 +118,7 @@ footer {
 }
 
 .Emilia,
-.Eitan {
+.Eitan, .Lara {
   float: left;
   margin-left: 50px;
 }
@@ -138,39 +127,44 @@ footer {
   border-radius: 100px;
 }
 
-
-Nav {
-  padding-top: 10px;
-  margin: 40px;
+.Text h2{
+  background-color: #111;
+  font-size: large;
 }
 
-Nav ul {
+nav ul {
   list-style-type: none;
   margin: 0;
-  margin-right: 10px;
   padding: 0;
-  display: flex;
-  margin-left: 700px;
+  overflow: hidden;
+  background-color: #333;
 }
 
-Nav li {
-  margin: 0 5px;
+li {
+  float: left;
 }
 
-Nav li a {
-  font-family: 'Franklin Gothic Medium';
-  border-radius: 50px;
-  display: inline-block;
-  padding: 8px 16px;
+li a {
+  font-family: Arial, sans-serif;
+  color: white;
+  font-size: 24px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  background-color: rgb(255, 127, 127);
-  box-shadow: 0 3px 7px 0 rgba(141, 39, 39, 0.884), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  color: rgb(255, 255, 255);
+  margin-top:5px;
 }
-
-Nav li a:hover {
-  background-color: rgba(141, 39, 39, 0.884);
-  color: rgb(255, 240, 240);
+nav img{
+  margin-top:5px;
+  margin-left: 70px;
+}
+nav h1{
+  margin-left: 50px;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
 }
 
 /*Habitacion 1, java*/
