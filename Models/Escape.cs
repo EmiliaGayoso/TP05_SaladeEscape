@@ -9,6 +9,10 @@ public static int GetEstadoJuego()
 {
     return EstadoJuego;
 }
+public static void CambioEstado()
+{
+    EstadoJuego++;
+}
 public static bool ResolverSala(int sala, string incognita)
 {
   bool incPass=false;

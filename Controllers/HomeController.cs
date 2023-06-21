@@ -15,9 +15,9 @@ public class HomeController : Controller
     }
     public IActionResult Comenzar()
     {
-        int habitacion = Escape.GetEstadoJuego();
-        return View("Habitacion"+ habitacion++);
-
+        int habitacion = Escape.GetEstadoJuego()+1;
+        Escape.CambioEstado();
+        return View("habitacion"+ habitacion);
     }
     public IActionResult Creditos()
     {
@@ -34,13 +34,13 @@ public class HomeController : Controller
         
         if (Escape.ResolverSala(sala, clave))
         {
-            if(sala>4)
+            if(sala<=4)
             {
-                return View("Victoria");
+                return RedirectToAction("Comenzar");
             }
             else
             {
-                return RedirectToAction("Comenzar");
+                return View("Victoria");
             }
         }
         else
