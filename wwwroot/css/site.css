@@ -202,3 +202,30 @@ li a:hover {
 {
   width: 265px;
 }
+.alert {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+}
+.hab2, .hab3, .hab4  h1{
+  text-align: center;
+  color:#721c24;
+}
+p{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+.hab2 article, .hab3 article, .hab4 article{
+  background-image: url("../img/pantalla1-2.jpg");
+  width: 100%;
+}
+article{
+  color:rgb(240, 240, 240);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
