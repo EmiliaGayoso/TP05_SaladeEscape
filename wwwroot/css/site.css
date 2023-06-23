@@ -23,7 +23,7 @@ footer {
 /* EsPantalla index,tutorial,creditos*/
 .Index,
 .Tutorial,
-.Creditos {
+.Creditos, .hab2, .hab3, .hab4  {
   background-image: url("../img/pantalla1-2.jpg");
   color: red;
   background-color: rgba(255, 0, 0, 0.082);
@@ -219,13 +219,14 @@ p{
   padding-right: 20px;
   font-size: 20px;
 }
-.hab2 article, .hab3 article, .hab4 article{
-  background-image: url("../img/pantalla1-2.jpg");
-  width: 100%;
-}
+
 article{
   color:rgb(240, 240, 240);
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.textVictoria{
+  text-align: center;
+  color:#721c24;
 }

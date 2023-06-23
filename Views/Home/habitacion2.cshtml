@@ -8,6 +8,8 @@
 </header>
 <article>
     <h2>¿Qué hacemos en esta habitación?</h2>
+       <h1>La oficina de la coordinadora</h1>
+    <p>Has avanzado a través del colegio, vía los ductos de ventilación, hacia la oficina de la antigua coordinadora del curso 4ID donde hay documentos importantes. Descubre el código secreto para poder desbloquear la siguiente sala. ¡Suerte!
     @{
         if (ViewBag.Error != null)
         {
@@ -17,15 +19,18 @@
             </div>
         }
     }
-    <h1>La oficina de la coordinadora</h1>
-    <p>Has avanzado a través del colegio, vía los ductos de ventilación, hacia la oficina de la antigua coordinadora del curso 4ID donde hay documentos importantes. Descubre el código secreto para poder desbloquear la siguiente sala. ¡Suerte!
-    </p>
-    <img src="../img/Oficina.png" width="50%" height="70%">
+  </p>
+    <img src="img/Oficina.png" width="50%" height="70%">
     <br>
     <form action='@Url.Action("Habitacion", "Home")'>
         <input type="hidden" name="sala" value="2">
         <input type="text" name="clave">
+         <input type="button" onclick="alert('Presta atención: Mira las hojas y detecta las anormalidades.')" value = "Pista">
+    <input type="button" onclick="alert('La clave tiene 4 digitos y entre ellos, contiene un 4 (Puede estar al inicio, en el medio, o al final). ')" value="Pista Extra">
         <input type="submit" value="Envíar">
     </form>
 </article>
+  <footer>
+            <h5>Hecho por: María Emilia Gayoso Martinez, Eitan Gabriel Toporovskaja y Lara Micaela Farina.</h5>
+        </footer>
 </div>

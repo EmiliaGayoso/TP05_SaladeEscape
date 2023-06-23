@@ -8,6 +8,10 @@
 <article>
 
     <h2>¿Qué hacemos en este cuarto?</h2>
+        <h1>La biblioteca abandonada</h1>
+        <p>Has avanzado a través del colegio, vía los ductos de ventilación, hasta que llegaron al ascensor y bajaron por los cables de este. Llegaron a la planta baja y se dirijen a la
+        biblioteca abandonada donde hay libros en un lenguaje de la epoca sobre robots y otras cosas. Descifre el codigo y el idioma para poder desbloquear la siguiente sala. ¡Suerte!
+    </p>
     @{
         if (ViewBag.Error != null)
         {
@@ -17,10 +21,8 @@
             </div>
         }
     }
-    <p>Has avanzado a través del colegio, vía los ductos de ventilación, hasta que llegaron al ascensor y bajaron por los cables de este. Llegaron a la planta baja y se dirijen a la
-        biblioteca abandonada donde hay libros en un lenguaje de la epoca sobre robots y otras cosas. Descifre el codigo y el idioma para poder desbloquear la siguiente sala. ¡Suerte!
-    </p>
-    <img src="../img/PantallaSalaBiblioteca" width="50%" height="70%">
+
+    <img src="~/img/PantallaSalaBiblioteca" width="50%" height="70%">
     <br>
     <form action='@Url.Action("Habitacion", "Home")'>
         <input type="hidden" name="sala" value="3">
@@ -32,4 +34,7 @@
         <input type="submit" value="Envíar">
     </form>
 </article>
+  <footer>
+            <h5>Hecho por: María Emilia Gayoso Martinez, Eitan Gabriel Toporovskaja y Lara Micaela Farina.</h5>
+        </footer>
 </div>
