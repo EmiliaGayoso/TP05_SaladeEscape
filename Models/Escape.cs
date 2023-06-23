@@ -20,11 +20,9 @@ public static bool ResolverSala(int sala, string incognita)
     if(incognita == IncognitasSalas[sala-1])
     {
         EstadoJuego++;
-        Console.WriteLine("True");
         return true;
     }
     else{
-        Console.WriteLine("false");
         return false;
     }
     
