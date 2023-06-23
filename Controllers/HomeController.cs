@@ -39,7 +39,7 @@ public class HomeController : Controller
         bool resuelto = Escape.ResolverSala(sala, clave);
         if (resuelto == true)
         {
-            if (sala <= 4)
+            if (sala < 4)
             {
                 return RedirectToAction("Comenzar");
             }
