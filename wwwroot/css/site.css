@@ -34,10 +34,30 @@ footer {
 .hab1 {
   background-image: url("../img/cidi.jpg");
   background-repeat: no-repeat;
-  margin: 0px;
+  margin:0px;
   padding: 0px;
   height: 1000px;
   width: 100%;
+}
+.hab1 h1{
+  margin: 40px;
+  font-size: 80px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hab1 p{
+  margin: 30px;
+  padding: 20px;
+  text-align: justify;
+  background-color: rgb(40, 187, 187);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  text-decoration: solid;
+}
+.hab1 input{
+  margin: 10px;
+  padding: 5px;
+  color: #fffefe;
+  background-color: black;
 }
 
 /* Header */
@@ -183,19 +203,19 @@ li a:hover {
 .pista .pista1
 {
   position: absolute;
-  top: 57px; 
-  left: 39px;
+  top: 40px; 
+  left: 36px;
 }
 .pista .pista2
 {
   position: absolute;
-  top: 54px; 
+  top: 35px; 
   left: 545px;
 }
 .pista .pista3
 {
   position: absolute;
-  top: 37px; 
+  top: 25px; 
   left: 1553px;
 }
 .pista3 img
